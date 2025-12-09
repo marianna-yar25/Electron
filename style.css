@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    background: #f3f4f6;
+    height: 100vh;
+  }
+  
+  /* SIDEBAR */
+  .sidebar {
+    width: 240px;
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 30px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    background: #334155;
+  }
+  
+  .sidebar .active {
+    background: #3b82f6;
+  }
+  
+  /* MAIN CONTENT */
+  .main {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #1e293b;
+  }
+  
+  /* FORM */
+  form {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2563eb;
+  }
+  
+  /* MENSAJE */
+  .msg {
+    margin-top: 15px;
+    color: green;
+  }
+  
+  /* SECTIONS */
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  /* TABLE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  th {
+    background: #e2e8f0;
+    text-align: left;
+  }
+  

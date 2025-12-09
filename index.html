@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi App - Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Mi App</h2>
+    <ul>
+      <li class="active" onclick="showSection('formulario')">Formulario</li>
+      <li onclick="showSection('registros')">Registros</li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <!-- FORMULARIO -->
+    <section id="formulario" class="section active">
+      <h1>Agregar registro</h1>
+
+      <form id="dataForm">
+        <label>Nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label>Correo</label>
+        <input type="email" id="correo" required>
+
+        <label>Edad</label>
+        <input type="number" id="edad" min="1" required>
+
+        <button type="submit">Guardar</button>
+      </form>
+
+      <p id="msg" class="msg"></p>
+    </section>
+
+    <!-- REGISTROS -->
+    <section id="registros" class="section">
+      <h1>Registros guardados</h1>
+
+      <table id="tablaRegistros">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
